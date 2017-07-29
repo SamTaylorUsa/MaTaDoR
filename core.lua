@@ -46,13 +46,13 @@ local lang = redis:get(hash)
 			{text = "➣ ⚜️Media lock list⚜️", callback_data="/mutelist:"..GP_id}
 		},
 		{
-			{text = '> 🔅More🔅 ', callback_data = '/more:'..GP_id}
+			{text = ' 🔅More🔅 ', callback_data = '/more:'..GP_id}
 		},
 		{
-			{text = '> 🔃update🔃 ', callback_data = '/Black:'..GP_id}
+			{text = ' 🔃update🔃 ', callback_data = '/Black:'..GP_id}
 		},
 		{
-			{text= '> Back🔙' ,callback_data = '/lang:'..GP_id}
+			{text= ' Back🔙' ,callback_data = '/lang:'..GP_id}
 		}				
 	}
   elseif lang then
@@ -64,13 +64,13 @@ local lang = redis:get(hash)
 			{text = "➣ ⚜️لیست قفل رسانه⚜️", callback_data="/mutelist:"..GP_id}
 		},
 		{
-			{text = '> 🔅تنظیمات بیشتر🔅 ', callback_data = '/more:'..GP_id}
+			{text = ' 🔅تنظیمات بیشتر🔅 ', callback_data = '/more:'..GP_id}
 		},
 		{
-			{text = '> 🔃آپدیت🔃 ', callback_data = '/Black:'..GP_id}
+			{text = ' 🔃آپدیت🔃 ', callback_data = '/Black:'..GP_id}
 		},
 		{
-			{text= '> بازگشت🔙' ,callback_data = '/lang:'..GP_id}
+			{text= ' بازگشت🔙' ,callback_data = '/lang:'..GP_id}
 		}				
 	}
   end
@@ -93,7 +93,7 @@ local settings = data[tostring(GP_id)]["settings"]
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = '> Flood Sensitivity ', callback_data = 'BlackTeaM'}
+			{text = ' Flood Sensitivity ', callback_data = 'BlackTeaM'}
 		},
 		{
 			{text = "🔺", callback_data='/floodup:'..GP_id}, 
@@ -101,7 +101,7 @@ local settings = data[tostring(GP_id)]["settings"]
 			{text = "🔻", callback_data='/flooddown:'..GP_id}
 		},
 		{
-			{text = '> Character Sensitivity ', callback_data = 'BlackTeaM'}
+			{text = ' Character Sensitivity ', callback_data = 'BlackTeaM'}
 		},
 		{
 			{text = "🔺", callback_data='/charup:'..GP_id}, 
@@ -109,7 +109,7 @@ local settings = data[tostring(GP_id)]["settings"]
 			{text = "🔻", callback_data='/chardown:'..GP_id}
 		},
 		{
-			{text = '> Flood Check Time ', callback_data = 'BlackTeaM'}
+			{text = ' Flood Check Time ', callback_data = 'BlackTeaM'}
 		},
 		{
 			{text = "🔺", callback_data='/floodtimeup:'..GP_id}, 
@@ -117,7 +117,7 @@ local settings = data[tostring(GP_id)]["settings"]
 			{text = "🔻", callback_data='/floodtimedown:'..GP_id}
 		},
 		{
-			{text = '> Back🔙 ', callback_data = '/settings:'..GP_id}
+			{text = ' Back🔙 ', callback_data = '/settings:'..GP_id}
 		}				
 	}
    elseif lang then
@@ -132,7 +132,7 @@ local settings = data[tostring(GP_id)]["settings"]
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = '> حداکثر پیام های رگبار ', callback_data = 'BlackTeaM'}
+			{text = ' حداکثر پیام های رگبار ', callback_data = 'BlackTeaM'}
 		},
 		{
 			{text = "🔺", callback_data='/floodup:'..GP_id}, 
@@ -140,7 +140,7 @@ local settings = data[tostring(GP_id)]["settings"]
 			{text = "🔻", callback_data='/flooddown:'..GP_id}
 		},
 		{
-			{text = '> حداکثر حروف مجاز ', callback_data = 'BlackTeaM'}
+			{text = ' حداکثر حروف مجاز ', callback_data = 'BlackTeaM'}
 		},
 		{
 			{text = "🔺", callback_data='/charup:'..GP_id}, 
@@ -148,7 +148,7 @@ local settings = data[tostring(GP_id)]["settings"]
 			{text = "🔻", callback_data='/chardown:'..GP_id}
 		},
 		{
-			{text = '> زمان بررسی پیام های مکرر ', callback_data = 'BlackTeaM'}
+			{text = ' زمان بررسی پیام های مکرر ', callback_data = 'BlackTeaM'}
 		},
 		{
 			{text = "🔺", callback_data='/floodtimeup:'..GP_id}, 
@@ -156,7 +156,7 @@ local settings = data[tostring(GP_id)]["settings"]
 			{text = "🔻", callback_data='/floodtimedown:'..GP_id}
 		},
 		{
-			{text = '> Back🔙 ', callback_data = '/settings:'..GP_id}
+			{text = ' Back🔙 ', callback_data = '/settings:'..GP_id}
 		}				
 	}
    end
@@ -366,10 +366,10 @@ local lang = redis:get(hash)
 			{text = group_welcone, callback_data="/welcome:"..GP_id}
 		},
 		{
-			{text = '> More Settings ', callback_data = '/moresettings:'..GP_id}
+			{text = ' More Settings ', callback_data = '/moresettings:'..GP_id}
 		},
 		{
-			{text = '> Back ', callback_data = '/option:'..GP_id}
+			{text = ' Back ', callback_data = '/option:'..GP_id}
 		}				
 	}
      elseif lang then
@@ -466,10 +466,10 @@ local lang = redis:get(hash)
 			{text = group_welcone, callback_data="/welcome:"..GP_id}
 		},
 		{
-			{text = '> تنظیمات بیشتر ', callback_data = '/moresettings:'..GP_id}
+			{text = ' تنظیمات بیشتر ', callback_data = '/moresettings:'..GP_id}
 		},
 		{
-			{text = '> بازگشت ', callback_data = '/option:'..GP_id}
+			{text = ' بازگشت ', callback_data = '/option:'..GP_id}
 		}				
 	}
   end
@@ -634,7 +634,7 @@ local lang = redis:get(hash)
 			{text = mute_keyboard, callback_data="/mutekeyboard:"..GP_id}
 		},
 		{
-			{text = '> Back ', callback_data = '/option:'..GP_id}
+			{text = ' Back ', callback_data = '/option:'..GP_id}
 		}				
 	}
    elseif lang then
@@ -706,7 +706,7 @@ local lang = redis:get(hash)
 			{text = mute_keyboard, callback_data="/mutekeyboard:"..GP_id}
 		},
 		{
-			{text = '> بازگشت ', callback_data = '/option:'..GP_id}
+			{text = ' بازگشت ', callback_data = '/option:'..GP_id}
 		}				
 	}
   end
@@ -779,10 +779,10 @@ local chatid = "-"..msg.query:match("%d+")
 	keyboard = {}
 	keyboard.inline_keyboard = {
 		{
-			{text = '> ♦️log in/ورود♦️ ', callback_data = '/lang:'..chatid}
+			{text = ' ♦️log in/ورود♦️ ', callback_data = '/lang:'..chatid}
 		},
 		{
-			{text= '> Exit/خروج 🔚' ,callback_data = '/exit:'..chatid}
+			{text= ' Exit/خروج 🔚' ,callback_data = '/exit:'..chatid}
 		}					
 	}
 	send_inline(msg.id,'settings','Group Option','Tap Here','🔶 گزینه مورد نظر خود را انتخاب کنید 🔶',keyboard)
@@ -812,10 +812,10 @@ local lang = redis:get(hash)
 	keyboard.inline_keyboard = {
 		{
 			{text = "➣ English 🇦🇺", callback_data="/english:"..matches[2]},
-			{text = '> فارسی 🇮🇷', callback_data = '/persian:'..matches[2]}
+			{text = ' فارسی 🇮🇷', callback_data = '/persian:'..matches[2]}
 		},
 		{
-			{text= '> Exit/خروج 🔚' ,callback_data = '/exit:'..matches[2]}
+			{text= ' Exit/خروج 🔚' ,callback_data = '/exit:'..matches[2]}
 		}				
 	}
     edit_inline(msg.message_id, text, keyboard)
@@ -1550,7 +1550,7 @@ if matches[1] == '/flooddown' then
 				flood_max = data[tostring(matches[2])]['settings']['num_msg_max']
 			end
 		end
-		if tonumber(flood_max) > 2 then
+		if tonumber(flood_max)  2 then
 			flood_max = tonumber(flood_max) - 1
 			data[tostring(matches[2])]['settings']['num_msg_max'] = flood_max
 			save_data(_config.moderation.data, data)
@@ -1609,7 +1609,7 @@ if matches[1] == '/warndown' then
 				warning_max = data[tostring(matches[2])]['settings']['warning_max']
 			end
 		end
-		if tonumber(warning_max) > 2 then
+		if tonumber(warning_max)  2 then
 			warning_max = tonumber(warning_max) - 1
 			data[tostring(matches[2])]['settings']['warning_max'] = warning_max
 			save_data(_config.moderation.data, data)
@@ -1668,7 +1668,7 @@ if matches[1] == '/chardown' then
 				char_max = data[tostring(matches[2])]['settings']['set_char']
 			end
 		end
-		if tonumber(char_max) > 2 then
+		if tonumber(char_max)  2 then
 			char_max = tonumber(char_max) - 1
 			data[tostring(matches[2])]['settings']['set_char'] = char_max
 			save_data(_config.moderation.data, data)
@@ -1724,7 +1724,7 @@ if matches[1] == '/floodtimedown' then
 				check_time = data[tostring(matches[2])]['settings']['time_check']
 			end
 		end
-		if tonumber(check_time) > 2 then
+		if tonumber(check_time)  2 then
 			check_time = tonumber(check_time) - 1
 			data[tostring(matches[2])]['settings']['time_check'] = check_time
 			save_data(_config.moderation.data, data)
@@ -2906,9 +2906,9 @@ end
 		else 
 			local i = 1
 			if not lang then
-				text = '_> White List:_ \n'
+				text = '_ White List:_ \n'
 			else
-				text = '_> لیست سفید:_ \n'
+				text = '_ لیست سفید:_ \n'
 			end
 			for k,v in pairs(data[tostring(matches[2])]['whitelist']) do
 				text = text..''..i..' - '..check_markdown(v)..' ' ..k.. ' \n'
@@ -3085,10 +3085,10 @@ if matches[1] == '/Black' then
 			{text = "➣ Xamarin Developer", callback_data="/xamarindev:"..matches[2]}
 		},
 		{
-			{text = '> Our GitHub ', url = 'https://www.github.com/BlackTeam'}
+			{text = ' Our GitHub ', url = 'https://www.github.com/BlackTeam'}
 		},
 		{
-			{text= '> Back 🔙' ,callback_data = '/option:'..matches[2]}
+			{text= ' Back 🔙' ,callback_data = '/option:'..matches[2]}
 		}				
 	}
    elseif lang then
@@ -3101,10 +3101,10 @@ if matches[1] == '/Black' then
 			{text = "➣ زامارین دولوپر", callback_data="/xamarindev:"..matches[2]}
 		},
 		{
-			{text = '> گیت هاب تیم ', url = 'https://www.github.com/BlackTeam'}
+			{text = ' گیت هاب تیم ', url = 'https://www.github.com/BlackTeam'}
 		},
 		{
-			{text= '> بازگشت 🔙' ,callback_data = '/option:'..matches[2]}
+			{text= ' بازگشت 🔙' ,callback_data = '/option:'..matches[2]}
 		}				
 	}
    end
