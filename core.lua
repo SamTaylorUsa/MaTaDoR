@@ -56,12 +56,12 @@ local lang = redis:get(hash)
 		}				
 	}
   elseif lang then
-	 text = '_به پنل خوشآمدید_'
+	 text = '_به پنل  بلک خوش آمدید_'
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "➣ تنظیمات", callback_data="/settings:"..GP_id},
-			{text = "➣ ⚜️لیست قفل رسانه⚜️", callback_data="/mutelist:"..GP_id}
+			{text = "🔰تنظیمات🔰", callback_data="/settings:"..GP_id},
+			{text = "⚜️لیست قفل رسانه⚜️", callback_data="/mutelist:"..GP_id}
 		},
 		{
 			{text = ' 🔅تنظیمات بیشتر🔅 ', callback_data = '/more:'..GP_id}
@@ -148,7 +148,7 @@ local settings = data[tostring(GP_id)]["settings"]
 			{text = "🔻", callback_data='/chardown:'..GP_id}
 		},
 		{
-			{text = ' زمان بررسی پیام های مکرر ', callback_data = 'BlackTeaM'}
+			{text = 'زمان بررسی پیام های رگبار ', callback_data = 'BlackTeaM'}
 		},
 		{
 			{text = "🔺", callback_data='/floodtimeup:'..GP_id}, 
@@ -466,7 +466,7 @@ local lang = redis:get(hash)
 			{text = group_welcone, callback_data="/welcome:"..GP_id}
 		},
 		{
-			{text = ' تنظیمات بیشتر ', callback_data = '/moresettings:'..GP_id}
+			{text = '✨تنظیمات بیشتر✨ ', callback_data = '/moresettings:'..GP_id}
 		},
 		{
 			{text = ' بازگشت ', callback_data = '/option:'..GP_id}
@@ -811,7 +811,7 @@ local lang = redis:get(hash)
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "➣ English 🇦🇺", callback_data="/english:"..matches[2]},
+			{text = " English 🇦🇺", callback_data="/english:"..matches[2]},
 			{text = ' فارسی 🇮🇷', callback_data = '/persian:'..matches[2]}
 		},
 		{
@@ -3131,18 +3131,18 @@ local text = [[]]
     edit_inline(msg.message_id, text, keyboard)
 end
 
-if matches[1] == '/xamarindev' then
-local text = [[*》Xamarin_Developer Information《*
-			》Age : *16*
+if matches[1] == '/samtaylor' then
+local text = [[*》samtaylor_Developer Information《*
+			》Age : *21*
 			》Name : *Unknown*
-			》City : *Yazd - Yazd*
+			》City : *Theran*
 			*-------------------------*
 			*》Bridges《*
-			》Pv : [@Xamarin_Developer](Telegram.Me/Xamarin_Developer)
-			》PvResan : [@Xamarin_Developer_Bot](Telegram.Me/Xamarin_Developer_Bot)
+			》Pv : [@GODILOVEYOUME2_Developer](Telegram.Me/@GODILOVEYOUME2)
+			》PvResan : [@teamonlineirbot_Developer_Bot](Telegram.Me/@teamonlineirbot)
 			*-------------------------*
 			*》Expertise《*
-			》*C#* and a bit *C++*
+			》*C#* and a bit *C++ & ...*
 			*-------------------------*]]
   if not lang then
 		keyboard = {} 
@@ -3267,7 +3267,7 @@ return {
 		"^###cb:(/whitelist):(.*)$",
 		"^###cb:(/cleanwhitelist):(.*)$",
 		"^###cb:(/silentlist):(.*)$",
-		"^###cb:(/xamarindev):(.*)$",
+		"^###cb:(/samtaylor):(.*)$",
 		"^###cb:(/1):(.*)$",
 		"^###cb:(/cleansilentlist):(.*)$",
 		"^###cb:(/link):(.*)$",
